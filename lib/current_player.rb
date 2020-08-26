@@ -62,3 +62,8 @@ end
 def current_player(board)
   turn_count(board) % 2 == 0? "X" : "O"
 end
+
+# started off with an if statement in #current_player, but it didn't work
+# I came across the conditional expression when googling operators
+# If the conditional expression is true, then it'll go for the first option (X), otherwise (O)
+# I was a little confused at 
