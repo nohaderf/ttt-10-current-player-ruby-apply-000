@@ -60,9 +60,12 @@ def turn_count(board)
 end
 
 def current_player(board)
-  turn_count(board) % 2 == 0? "O" : "X"
+  turn_count(board) % 2 == 0? "X" : "O"
 end
 
 # started off with an if statement in #current_player, but it didn't work
 # I came across the conditional expression when googling operators
 # If the conditional expression is true, then it'll go for the first option 
+# I switched the two options initially, "O" coming first, as the person playing "O" will be going second (an even number)
+# Read the expected vs. got error message and realized I had flipped the results
+# I realized we are keeping count of turns that already happened, and switched "X" to first. The test passed after.
