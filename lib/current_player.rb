@@ -55,7 +55,7 @@ def turn_count(board)
     if spot == "X" || spot == "O"
       counter += 1
   end
-  return counter
+  counter
 end
 
   
